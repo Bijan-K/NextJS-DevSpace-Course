@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Header from './Header';
 
 export default function Layout({ title, keywords, description, children }) {
@@ -9,7 +8,7 @@ export default function Layout({ title, keywords, description, children }) {
         <title>{title}</title>
         <meta name="keywords" content={keywords} />
         <meta name="keywords" content={description} />
-        <Link href="/favicon.ico" rel="icon" />
+        <link href="/favicon.ico" rel="icon" />
       </Head>
       <Header />
       <main className="mx-5 my-7">{children}</main>

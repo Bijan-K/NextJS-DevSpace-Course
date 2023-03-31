@@ -1,5 +1,5 @@
-import Layout from '@/components/Layout';
+import { getStaticProps } from '@/pages/blog/page/[page_index]';
+import BlogPage from './page/[page_index]';
 
-export default function BlogPage() {
-  return <div>BlogPage</div>;
-}
+export { getStaticProps };
+export default BlogPage;
